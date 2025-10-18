@@ -1,47 +1,32 @@
-<h1 align="center">✨ Abdulrahman Kadri Projects Showcase ✨</h1>
+<h1 align="center">🏨 Elysia Hotel</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&size=24&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Front-End+Developer+(React.js);Modern+UI+Designer;Passionate+About+Web+Experiences" alt="Typing Animation">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&size=24&duration=3000&pause=1000&color=0F9D58&center=true&vCenter=true&width=500&lines=Welcome+to+Elysia+Hotel!;Luxury+Meets+Comfort+🌿;Built+with+React+%26+Bootstrap" alt="Typing Animation">
 </p>
 
 ---
 
-## 👨‍💻 About Me
+## 🌟 About
 
-I'm **Abdulrahman Kadri**, a passionate **Front-End Developer** specialized in **React.js**, **Bootstrap**, and creating smooth, elegant, and responsive web experiences.  
-I focus on crafting modern UI/UX designs that combine performance with beauty ✨  
-
-🌐 [Portfolio](https://venom-portfolio.netlify.app)  
-📧 kadri.abdulrahman@example.com  
+**Elysia Hotel** is a luxurious and modern hotel booking website designed to deliver a premium online experience.  
+Developed with **React.js**, styled using **Bootstrap 5** and **Bootstrap Icons**, and powered by **React Router DOM** for smooth navigation.  
+Deployed seamlessly on **Vercel** for top-notch performance and reliability.
 
 ---
 
-# 🍝 Bella Vita Restaurant
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&size=22&duration=3000&pause=1000&color=F39C12&center=true&vCenter=true&width=500&lines=Welcome+to+Bella+Vita+Restaurant!;Modern+Italian+Experience+in+Every+Bite" alt="Typing Animation">
-</p>
-
-## 🌟 Description
-
-**Bella Vita Restaurant** is a modern and elegant restaurant web app built with **React.js**, styled using **Bootstrap 5**, and enhanced with **Bootstrap Icons**.  
-The website delivers a smooth, responsive, and visually appealing experience — perfect for showcasing menus, offers, and reservations.  
-Deployed on **Vercel** for fast performance and easy accessibility.
-
----
-
-## 🖥️ Live Demo  
-🔗 [Visit Website](https://bella-vita-restaurant.vercel.app)
+## 🖥️ Live Demo
+🔗 [Visit Website](https://elysia-hotel.vercel.app)
 
 ---
 
 ## 🚀 Features
 
-✅ Elegant & responsive design  
-✅ Fast navigation with React Router  
-✅ Bootstrap-based UI with icons  
-✅ Clean, reusable components  
-✅ Deployed on Vercel  
+✨ Elegant and responsive hotel design  
+✨ Fast and smooth page navigation  
+✨ Clean reusable React components  
+✨ Bootstrap & Bootstrap Icons integration  
+✨ SEO-friendly and performance-optimized  
+✨ Deployed on Vercel for instant global access  
 
 ---
 
@@ -49,18 +34,17 @@ Deployed on **Vercel** for fast performance and easy accessibility.
 
 | Technology | Description |
 |-------------|-------------|
-| ⚛️ React.js | Front-end framework |
-| 🎨 Bootstrap 5 | Styling & layout |
-| 🔣 Bootstrap Icons | Vector icons |
-| 🧭 React Router DOM | Routing between pages |
-| ☁️ Vercel | Deployment platform |
+| ⚛️ **React.js** | JavaScript library for building UI |
+| 🎨 **Bootstrap 5** | Responsive design and layout |
+| 🔣 **Bootstrap Icons** | Iconography for UI elements |
+| 🧭 **React Router DOM** | Client-side routing |
+| ☁️ **Vercel** | Deployment and hosting platform |
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Installation & Setup
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/USERNAME/Bella-Vita-Restaurant-main.git
-cd Bella-Vita-Restaurant-main
-npm install
-npm start
+git clone https://github.com/ADRIANO125/Elysia-Hotel.git
