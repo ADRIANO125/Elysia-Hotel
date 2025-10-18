@@ -1,0 +1,848 @@
+/* General Styles */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --primary: #0d6efd;
+  --dark: #0b1324;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding-top: 0; /* sticky navbar does not require body padding */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: .2px;
+}
+
+/* Navigation */
+.navbar {
+  padding: 1rem 0;
+  background-color: #212529 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: .5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  z-index: -1;
+}
+
+.hero .card {
+  border: none;
+  border-radius: 14px;
+}
+
+.hero-content {
+  max-width: 700px;
+  animation: fadeInUp 1s ease;
+}
+
+.hero h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem !important;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  margin-bottom: 2rem !important;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero .btn {
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Prevent horizontal scroll on mobile */
+  .container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col, [class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 0 1rem;
+    min-height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* Fix horizontal scrolling for room cards */
+  .d-flex.flex-row.flex-nowrap.overflow-auto {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  /* Ensure experience cards don't overflow */
+  .experience-card {
+    margin-bottom: 1rem;
+  }
+
+  .experience-card img {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+  }
+}
+
+/* Rooms */
+.room-card {
+  height: 100%;
+  border: 1px solid #eef1f6;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+.room-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+.room-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+.room-card .card-body {
+  padding: 1.1rem 1.1rem .9rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.room-card .card-title {
+  font-weight: 700;
+  margin-bottom: .25rem;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  color: #0b1324;
+}
+.room-card .card-text {
+  color: #6c7785;
+  font-size: .95rem;
+  line-height: 1.5;
+  margin-bottom: .25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.room-meta {
+  margin: 0 0 .75rem;
+  padding: 0;
+  list-style: none;
+  color: #5f6b7b;
+  font-size: .9rem;
+}
+.room-meta li {
+  margin-bottom: .25rem;
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+}
+.room-meta i { color: var(--primary); }
+
+.star-rating {
+  color: #f3b600;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.star-rating .bi { margin-left: 2px; }
+
+.badge-soft {
+  background: #f3f6ff;
+  color: #0d47a1;
+  border: 1px solid #e0e7ff;
+  font-weight: 500;
+  padding: .35rem .6rem;
+  border-radius: 30px;
+  font-size: .75rem;
+}
+
+.price-tag {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.price-suffix { color: #6c7785; font-weight: 500; }
+
+.room-actions .btn { border-radius: 30px; padding-inline: 1.1rem; }
+.room-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0,0,0,.08);
+}
+
+/* Amenities */
+.amenity-card {
+  border-radius: 14px;
+  transition: transform .2s ease, box-shadow .2s ease;
+  min-height: 360px; /* taller card as requested */
+}
+.amenity-card img {
+  height: 200px; /* increased image height */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.amenity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.08) !important;
+}
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(13,110,253,.1);
+  color: var(--primary);
+  font-size: 22px;
+}
+
+/* About */
+#about img {
+  object-fit: cover;
+}
+
+/* Experience Section (Enhanced Gallery) */
+.experience-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+.experience-card img {
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover img {
+  transform: scale(1.05);
+}
+
+.experience-overlay {
+  transition: background 0.3s ease;
+}
+
+.experience-card:hover .experience-overlay {
+  background: linear-gradient(transparent, rgba(0,0,0,0.8)) !important;
+}
+
+/* Testimonials */
+.testimonial-card {
+  border: 1px solid #eee;
+}
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f3f6fb;
+  color: #6c757d;
+  font-size: 20px;
+}
+
+/* Newsletter */
+.newsletter-section {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+}
+.newsletter-section .form-control {
+  border-radius: 30px;
+  padding: .75rem 1rem;
+}
+.newsletter-section .btn {
+  border-radius: 30px;
+}
+
+/* Footer (enhanced) */
+.footer {
+  background: linear-gradient(180deg, #0b1220 0%, #0b0f1a 100%);
+}
+.footer a {
+  color: #adb5bd;
+}
+.footer a:hover {
+  color: #ffffff;
+}
+.footer .social a {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+.footer .social a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+
+/* Topbar */
+.topbar .hover-primary:hover {
+  color: #0d6efd !important;
+}
+
+/* Utilities */
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.rounded {
+  border-radius: 0.375rem !important;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(0,0,0,.06) !important;
+}
+
+/* Custom Scrollbar */
+/* WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f3f5;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a32a3; /* hover color tuned to theme */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) #f1f3f5;
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .amenity-card { min-height: 300px; }
+  .amenity-card img { height: 160px; }
+}
+
+/* Search Form */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.form-control, .form-select {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+/* Contact Form Labels */
+#contact .form-label {
+  text-align: left;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Enhanced Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  border: none;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0b5ed7, #0a58ca);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.3);
+}
+
+/* Enhanced Card Hover Effects */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Enhanced Room Card Styles for Booking Page */
+.room-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+.room-card .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Enhanced Badge Styles */
+.badge-soft {
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  border: 1px solid rgba(13, 110, 253, 0.2);
+  font-weight: 500;
+  padding: 0.35rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero { min-height: 60vh; }
+  .gallery-img { height: 180px; }
+  .amenity-card { min-height: 320px; }
+  .amenity-card img { height: 170px; }
+  .dining-card { min-height: 380px; }
+  .dining-card img { height: 220px; }
+}
+
+/* Stats (Redefining Luxury Hospitality) */
+.stats-section {
+  background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
+}
+.stat-card {
+  border-radius: 14px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0,0,0,.08) !important;
+}
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(13,110,253,.1);
+  color: var(--primary);
+  font-size: 22px;
+  margin-inline: auto;
+}
+
+/* Dining */
+.dining-card {
+  min-height: 420px; /* taller dining cards */
+}
+.dining-card img {
+  height: 260px; /* increased image height */
+  object-fit: cover;
+}
+.dining-card .card-body { min-height: 120px; }
+.dining-card .card-body h5 { font-weight: 600; }
+
+/* Additional Services */
+.service-card {
+  border-radius: 14px;
+}
+.service-card img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.service-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f3f6fb;
+  color: #0d6efd;
+  font-size: 22px;
+  margin-inline: auto;
+}
+
+/* Anchor offset for sticky navbar */
+section[id], header[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Additional Mobile Fixes */
+@media (max-width: 576px) {
+  /* Extra small devices */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero {
+    padding: 0 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  /* Ensure no horizontal overflow */
+  .row {
+    --bs-gutter-x: 1rem;
+  }
+
+  .col, [class*="col-"] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Fix navbar on very small screens */
+  .navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 0.5rem;
+  }
+
+  /* Adjust experience cards for small screens */
+  .experience-card {
+    margin-bottom: 1rem;
+  }
+
+  .experience-card img {
+    min-height: 200px;
+  }
+
+  .experience-overlay {
+    padding: 1.5rem !important;
+  }
+
+  .experience-overlay h4,
+  .experience-overlay h5 {
+    font-size: 1.2rem;
+  }
+
+  .experience-overlay p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Enhanced Mobile Experience Section */
+@media (max-width: 768px) {
+  #gallery .row {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+
+  .experience-card {
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .experience-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  /* Create a masonry-like effect on mobile */
+  .experience-card:nth-child(1) img,
+  .experience-card:nth-child(2) img {
+    height: 250px !important;
+  }
+
+  .experience-card:nth-child(3) img,
+  .experience-card:nth-child(4) img,
+  .experience-card:nth-child(5) img {
+    height: 200px !important;
+  }
+
+  .experience-overlay {
+    background: linear-gradient(transparent 40%, rgba(0,0,0,0.8)) !important;
+  }
+
+  .experience-card:hover .experience-overlay {
+    background: linear-gradient(transparent 30%, rgba(0,0,0,0.9)) !important;
+  }
+}
+
+/* Extra small devices - Enhanced Experience */
+@media (max-width: 480px) {
+  #gallery .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .experience-card {
+    margin-bottom: 1.5rem;
+    border-radius: 20px !important;
+  }
+
+  .experience-card img {
+    height: 220px !important;
+  }
+
+  .experience-overlay {
+    padding: 1.25rem !important;
+  }
+
+  .experience-overlay h4 {
+    font-size: 1.1rem !important;
+  }
+
+  .experience-overlay h5 {
+    font-size: 1rem !important;
+  }
+
+  .experience-overlay p {
+    font-size: 0.85rem !important;
+    line-height: 1.4;
+  }
+
+  /* Add subtle animation for mobile */
+  .experience-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .experience-card:nth-child(1) { animation-delay: 0.1s; }
+  .experience-card:nth-child(2) { animation-delay: 0.2s; }
+  .experience-card:nth-child(3) { animation-delay: 0.3s; }
+  .experience-card:nth-child(4) { animation-delay: 0.4s; }
+  .experience-card:nth-child(5) { animation-delay: 0.5s; }
+}
