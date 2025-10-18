@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<h1 align="center">✨ Abdulrahman Kadri Projects Showcase ✨</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&size=24&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Front-End+Developer+(React.js);Modern+UI+Designer;Passionate+About+Web+Experiences" alt="Typing Animation">
+</p>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 👨‍💻 About Me
 
-### `npm start`
+I'm **Abdulrahman Kadri**, a passionate **Front-End Developer** specialized in **React.js**, **Bootstrap**, and creating smooth, elegant, and responsive web experiences.  
+I focus on crafting modern UI/UX designs that combine performance with beauty ✨  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🌐 [Portfolio](https://venom-portfolio.netlify.app)  
+📧 kadri.abdulrahman@example.com  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 🍝 Bella Vita Restaurant
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&size=22&duration=3000&pause=1000&color=F39C12&center=true&vCenter=true&width=500&lines=Welcome+to+Bella+Vita+Restaurant!;Modern+Italian+Experience+in+Every+Bite" alt="Typing Animation">
+</p>
 
-### `npm run build`
+## 🌟 Description
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Bella Vita Restaurant** is a modern and elegant restaurant web app built with **React.js**, styled using **Bootstrap 5**, and enhanced with **Bootstrap Icons**.  
+The website delivers a smooth, responsive, and visually appealing experience — perfect for showcasing menus, offers, and reservations.  
+Deployed on **Vercel** for fast performance and easy accessibility.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🖥️ Live Demo  
+🔗 [Visit Website](https://bella-vita-restaurant.vercel.app)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ Elegant & responsive design  
+✅ Fast navigation with React Router  
+✅ Bootstrap-based UI with icons  
+✅ Clean, reusable components  
+✅ Deployed on Vercel  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧰 Tech Stack
 
-## Learn More
+| Technology | Description |
+|-------------|-------------|
+| ⚛️ React.js | Front-end framework |
+| 🎨 Bootstrap 5 | Styling & layout |
+| 🔣 Bootstrap Icons | Vector icons |
+| 🧭 React Router DOM | Routing between pages |
+| ☁️ Vercel | Deployment platform |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Setup Instructions
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/USERNAME/Bella-Vita-Restaurant-main.git
+cd Bella-Vita-Restaurant-main
+npm install
+npm start
